@@ -1,0 +1,213 @@
+.master {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+}
+
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.countdown {
+    top: 0%;
+    right: 0%;
+}
+
+.audio {
+    top: 20%;
+    right: 0%;
+    position: absolute;
+}
+
+#element {
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    font-size: medium;
+
+}
+
+.start {
+    position: absolute;
+    top: 43%;
+    left: 32%;
+    width: 32%;
+    overflow: hidden;
+}
+
+.all {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.logo1 {
+    position: absolute;
+    bottom: 0%;
+    width: 8%;
+    overflow: hidden;
+}
+
+.logo2 {
+    position: absolute;
+    top: 0%;
+    width: 10%;
+    overflow: hidden;
+}
+
+.pic1 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 20%;
+    overflow: hidden;
+}
+
+.pic {
+    position: absolute;
+    bottom: 6%;
+    right: 31%;
+    width: 39%;
+    overflow: hidden;
+}
+
+.left {
+    position: absolute;
+    bottom: 5%;
+    left: 21%;
+    width: 8%;
+    overflow: hidden;
+    display: none;
+}
+
+.right {
+    position: absolute;
+    bottom: 5%;
+    left: 70%;
+    width: 8%;
+    overflow: hidden;
+    display: none;
+}
+
+.q1 {
+    position: absolute;
+    top: 18%;
+    left: 29%;
+    height: 15%;
+    width: 45%;
+    overflow: hidden;
+}
+
+.a1 {
+    position: absolute;
+    top: 42%;
+    left: 19%;
+    width: 30%;
+    overflow: hidden;
+}
+
+.a2 {
+    position: absolute;
+    top: 42%;
+    left: 60%;
+    width: 30%;
+    overflow: hidden;
+}
+
+.a3 {
+    position: absolute;
+    top: 58.9%;
+    left: 19%;
+    width: 30%;
+    overflow: hidden;
+}
+
+.a4 {
+    position: absolute;
+    top: 59%;
+    left: 60%;
+    width: 30%;
+    overflow: hidden;
+}
+
+.correct1 {
+    position: absolute;
+    top: 41.7%;
+    left: 19%;
+    width: 30%;
+    display: none;
+    overflow: hidden;
+}
+
+.correct2 {
+    position: absolute;
+    top: 58.7%;
+    left: 19%;
+    width: 30%;
+    display: none;
+    overflow: hidden;
+}
+
+.correct3 {
+    position: absolute;
+    top: 41.6%;
+    left: 60%;
+    width: 30%;
+    display: none;
+    overflow: hidden;
+}
+
+.correct4 {
+    position: absolute;
+    top: 41.6%;
+    left: 60%;
+    width: 30%;
+    display: none;
+    overflow: hidden;
+}
+
+.correct5 {
+    position: absolute;
+    top: 41.7%;
+    left: 19%;
+    width: 30%;
+    display: none;
+    overflow: hidden;
+}
+
+
+.btn {
+    position: absolute;
+    bottom: 7%;
+    right: 21%;
+    width: 8%;
+    overflow: hidden;
+    display: none;
+}
+
+.finish {
+    background-color: #04AA6D;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}

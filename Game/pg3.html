@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/animator.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <title>Game</title>
+</head>
+
+<body>
+    <div class="master">
+
+        <img src="bg.png" class="bg">
+
+
+        <div class="all">
+            <img src="leftimg.png" class="logo1">
+            <img src="topimg.png" class="logo2">
+            <img src="rightimg.png" class="pic1">
+            <img src="pic1.png" class="pic">
+            <a href="pg2.html"><img src="left.png" class="left"></a>
+            <a href="pg4.html"><img src="right.png" class="right"></a>
+
+        </div>
+
+        <p id="element"
+            style="position: absolute; font-size: 34px; right: 4%; z-index: 1; top: 0%; font-weight: bold; font-family: system-ui;">
+        </p>
+
+        <div class="page1">
+            <img src="3/q1.png" class="q1">
+            <img src="3/a1.png" class="a1">
+            <img src="3/a2.png" class="a2">
+            <img src="3/a3.png" class="a3">
+            <img src="3/a4.png" class="a4">
+            <img src="3/correct.png" class="correct3">
+        </div>
+    </div>
+
+
+    <script>
+        $('.a1').click(function () {
+            alert('Wrong Answer')
+            $('.right').fadeIn()
+            $('.left').fadeIn()
+        })
+
+        $('.a2').click(function () {
+            $('.correct3').show();
+            $('.right').show()
+            $('.left').fadeIn()
+        })
+
+        $('.a3').click(function () {
+            alert('Wrong Answer')
+            $('.right').show()
+            $('.left').fadeIn()
+
+
+        })
+        $('.a4').click(function () {
+            alert('Wrong Answer')
+            $('.right').show()
+            $('.left').fadeIn()
+
+        })
+
+        function countdown(element, minutes, seconds) {
+            // set time for the particular countdown
+            var time = minutes * 60 + seconds;
+            var interval = setInterval(function () {
+                var el = document.getElementById('element');
+                // if the time is 0 then end the counter
+                if (time == 0) {
+                    setTimeout(function () {
+                        el.innerHTML = "time O";
+                        $('#element').hide();
+                    });
+                }
+                var minutes = Math.floor(time / 60);
+                if (minutes < 10) minutes = "0" + minutes;
+                var seconds = time % 60;
+                if (seconds < 10) seconds = "0" + seconds;
+                var
+                    text = minutes + ':' + seconds;
+                el.innerHTML = text;
+                time--;
+            }, 1000);
+        }
+        countdown('clock', 2, 59);
+    </script>
+
+
+</body>
+
+</html>
